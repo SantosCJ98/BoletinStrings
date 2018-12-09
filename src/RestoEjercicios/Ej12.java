@@ -17,30 +17,17 @@ public class Ej12 {
 		System.out.println("¿Que cadena vas a buscar?");
 		
 		String buscar = readString();
-
 		
-		for (int i = 0; i <= s1.length() - buscar.length(); i++) {
+		for (int i = 0, j = buscar.length(); j <= s1.length(); i++, j++) {
 			
-		  for (int j = 0; j < buscar.length(); j++)
-		  {
-		    if (s1.charAt(i + j) == buscar.charAt(j)) {
-		  
-		      if (j == buscar.length()-1) {
-		     
-		        resultados++;
-		      
-		        break;
-		        
-		      } 
-		      
-		    } 
-		    
-		    else {
-		    
-		      break;
-		    }
-		  }
-		} 
+			if (buscar.equals(s1.substring(i, j))) {
+				
+				resultados++;
+				
+			}
+			
+		}
+		
 		
 		System.out.println("Se han dado " + resultados + " coincidencias");
 		
