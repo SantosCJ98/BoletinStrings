@@ -9,31 +9,39 @@ public class Ej13 {
 	public static void main(String[] args) {
 		
 		
-		int numpalabras = 0;
+		int resultados = 0;
 
-	    boolean bolpalabra = false;
+	    boolean espalabra = false;
 	    
 	    System.out.println("Introduce una cadena:");
 	    
 	    String s1 = readString();
-	    
-	    int finpalabra = s1.length() - 1;
 
 	    for (int i = 0; i < s1.length(); i++) {
 	   
-	        if (Character.isLetter(s1.charAt(i)) && i != finpalabra) {
-	            bolpalabra = true;
+	        if (Character.isLetter(s1.charAt(i)) && i != s1.length()-1) {
+	        	
+	            espalabra = true;
 	           
-	        } else if (!Character.isLetter(s1.charAt(i)) && bolpalabra) {
-	            numpalabras++;
-	            bolpalabra = false;
-	           
-	        } else if (Character.isLetter(s1.charAt(i)) && i == finpalabra) {
-	            numpalabras++;
 	        }
+	            
+	            else if (Character.isWhitespace(s1.charAt(i)) && espalabra == true) {
+	         
+	            resultados++;
+	            
+	            espalabra = false;
+	            
+	            }
+	           
+	      else if (Character.isLetter(s1.charAt(i)) && i == s1.length()-1) {
+	    	  
+	            resultados++;
+	            
+	        }
+	        
 	    }
 	    
-	    System.out.println("Hay " + numpalabras + " palabras");;
+	    System.out.println("Hay " + resultados + " palabras");;
 	    
 	}
 	
