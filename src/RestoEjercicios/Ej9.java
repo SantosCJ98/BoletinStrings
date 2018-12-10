@@ -16,18 +16,14 @@ public class Ej9 {
 		
 		String s2 = "";
 		
-		String aux = "";
-		
 
 		
 		for (int i = s1.length() - 1; i >= 0; i--) {
 			
-			aux = String.valueOf(s1.charAt(i));
-			
-			s2 = s2.concat(aux);
+			s2 = s2.concat(String.valueOf(s1.charAt(i)));
 		}
 		
-		System.out.println(s2);
+		System.out.println("La cadena resultante es " + s2);
 		
 		}
 		

@@ -16,9 +16,24 @@ public class Ej6 {
 		
 		String s2 = readString();
 		
-		String s3 = s1 + s2;
+		String res = "";
 		
-		System.out.println(s3);
+		for (int i = 0; i < s1.length(); i++) {
+				
+				res = res.concat(String.valueOf(s1.charAt(i)));
+				
+			
+		}
+		
+		for (int i = 0; i < s2.length(); i++) {
+			
+				res = res.concat(String.valueOf(s2.charAt(i)));
+			
+		
+		}
+		
+		System.out.println(res);
+		
 		
 		
 

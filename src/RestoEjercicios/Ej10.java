@@ -15,7 +15,7 @@ public class Ej10 {
 		String s1 = readString();
 		
 
-		for (int i = 0; i < s1.length()-1; i++) {
+		for (int i = 0; i < s1.length(); i++) {
 			
 			char c = s1.charAt(i);
 			

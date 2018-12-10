@@ -17,8 +17,6 @@ public class Ej8 {
 		
 		String s2 = "";
 		
-		String aux = "";
-		
 		System.out.println("Introduce el número de caracteres a copiar");
 		
 		int n = readInt();
@@ -33,9 +31,7 @@ public class Ej8 {
 		
 		for (int i = puntoinicial; i < s1.length(); i++) {
 			
-			aux = String.valueOf(s1.charAt(i));
-			
-			s2 = s2.concat(aux);
+			s2 = s2.concat( String.valueOf(s1.charAt(i)));
 		}
 		
 		System.out.println(s2);
