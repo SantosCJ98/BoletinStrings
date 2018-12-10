@@ -4,8 +4,10 @@ import static teclado.Teclado.*;
 
 public class Ej12 {
 	
-	//Pedir 2 cadenas: la segunda para buscar coincidencias en la primera. Contar las coincidencias.
-
+	//Pedir 2 cadenas.
+	//Recorrer la primera cadena, cogiendo el numero de caracteres que tiene la segunda, y asi hasta llegar al final de la primera.
+	//Si la porcion de cadena actual es igual a la segunda cadena, incrementar el contador en uno.
+	
 	public static void main(String[] args) {
 		
 		int resultados = 0;

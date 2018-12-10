@@ -5,6 +5,7 @@ import static teclado.Teclado.readString;
 public class Ej1c {
 	
 	//Pedir una cadena por teclado y comprobar si tiene 5 caracteres o mas que no sean ni la ñ, ni la x, ni la z.
+	//Si eso ocurre, devolver true. En caso contrario, devolver false.
 	public static void main(String[] args) {
 
 		System.out.println("Introduce una cadena:");

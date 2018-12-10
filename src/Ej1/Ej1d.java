@@ -5,6 +5,7 @@ import static teclado.Teclado.readString;
 public class Ej1d {
 	
 	//Pedir una cadena por teclado y comprobar que no empieza por un número.
+	//Si eso ocurre, devolver true. En caso contrario devolver false
 	public static void main(String[] args) {
 
 		System.out.println("Introduce una cadena:");

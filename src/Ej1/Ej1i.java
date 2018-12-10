@@ -5,6 +5,7 @@ import static teclado.Teclado.readString;
 public class Ej1i {
 	
 	//Pedir una cadena por teclado y comprobar que es un nombre (Empieza por mayusculas y sin espacios).
+	//Si eso ocurre, devolver true. En caso contrario devolver false
 	public static void main(String[] args) {
 
 		System.out.println("Introduce una cadena:");

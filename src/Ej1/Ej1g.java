@@ -5,6 +5,7 @@ import static teclado.Teclado.readString;
 public class Ej1g {
 	
 	//Pedir una cadena por teclado y comprobar que tenga 9 números (teléfono).
+	//Si eso ocurre, devolver true. En caso contrario devolver false
 	public static void main(String[] args) {
 
 		System.out.println("Introduce una cadena:");

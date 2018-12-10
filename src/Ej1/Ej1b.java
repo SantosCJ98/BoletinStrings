@@ -4,7 +4,8 @@ import static teclado.Teclado.readString;
 
 public class Ej1b {
 	
-	//Pedir una cadena por teclado y comprobar si tiene 3 letras, mayusculas o minusculas
+	//Pedir una cadena por teclado. Si solo contiene 3 letras (mayusculas o minusculas) devolver true.
+	//En caso contrario, devolver false.
 
 	public static void main(String[] args) {
 

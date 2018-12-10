@@ -5,6 +5,7 @@ import static teclado.Teclado.readString;
 public class Ej1k {
 	
 	//Pedir una cadena por teclado y comprobar que tiene el formato de un email.
+	//Si eso ocurre, devolver true. En caso contrario devolver false
 	public static void main(String[] args) {
 
 		System.out.println("Introduce una cadena:");
@@ -27,7 +28,7 @@ public class Ej1k {
 	
 	public static boolean email (String s) {
 		
-		if (s.matches("(\\S)+[@]{1}+([a-z])+[.]{1}+(([e]+[s])||([c]+[o]+[m])){1}")) {
+		if (s.matches("([a-z]||[0-9])+[@]{1}+([a-z]||[0-9])+[.]{1}+(([e]+[s])||([c]+[o]+[m])){1}")) {
 			
 			return true;
 			

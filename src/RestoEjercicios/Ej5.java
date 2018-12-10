@@ -4,7 +4,11 @@ import static teclado.Teclado.*;
 
 public class Ej5 {
 	
-	//Pedir una cadena y contar los caracteres que hay entre la primera y ultima aparicion de un caracter
+	//Pedir una cadena.
+	//Pedir un caracter.
+	//Recorrer la cadena, caracter a caracter, hasta la ultima aparicion del caracter pedido.
+	//Cuando aparezca el caracter que has pedido por primera vez, empezar a contar los caracteres.
+	
 	public static void main(String[] args) {
 		
 		int apariciones=0;
@@ -19,9 +23,9 @@ public class Ej5 {
 		
 		char c = readChar();
 		
-		for (int i = 0; i <= Character.toLowerCase(s.lastIndexOf(c)); i++) {
+		for (int i = 0; i <= s.lastIndexOf(c); i++) {
 			
-			if (Character.toLowerCase(s.charAt(i)) == c) {
+			if (s.charAt(i) == c) {
 				
 				inicio = true;
 				

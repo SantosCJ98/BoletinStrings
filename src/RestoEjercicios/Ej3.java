@@ -16,10 +16,8 @@ public class Ej3 {
 		
 		for (int i = 0; i < s1.length(); i++) {
 			
-			char c = s1.charAt(i);
-			
-			if (c == 'a' || c == 'A' || c == 'e' || c == 'E' || c == 'i' || c == 'I' || c == 'o' || c == 'O' || c == 'u' || c == 'U') {
-				
+			if (String.valueOf(s1.charAt(i)).matches("[AEIOU]||[aeiou]")) {
+					
 				numvocales++;
 				
 			}

@@ -4,7 +4,10 @@ import static teclado.Teclado.*;
 
 public class Ej8 {
 	
-	//Pedir una cadena y copiar los ultimos n caracteres de esa cadena a otra.
+		//Pedir una cadena y un numero entero.
+		//Recorrer la cadena desde un punto inicial (longitud - numero) hasta el final.
+		//Si el numero es mayor que la longitud de la cadena, lanzar excepcion.
+		//Reconstruir la cadena.
 
 	public static void main(String[] args) {
 		
@@ -12,7 +15,9 @@ public class Ej8 {
 		
 		String s1 = readString();
 		
-		String s2 ="";
+		String s2 = "";
+		
+		String aux = "";
 		
 		System.out.println("Introduce el número de caracteres a copiar");
 		
@@ -26,14 +31,11 @@ public class Ej8 {
 		
 		int puntoinicial = s1.length() - n;
 		
-		for (int i = puntoinicial; i <= s1.length()-1; i++) {
+		for (int i = puntoinicial; i < s1.length(); i++) {
 			
-			char c = s1.charAt(i);
-			
-			String aux = String.valueOf(c);
+			aux = String.valueOf(s1.charAt(i));
 			
 			s2 = s2.concat(aux);
-			
 		}
 		
 		System.out.println(s2);

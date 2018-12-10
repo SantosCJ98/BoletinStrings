@@ -5,6 +5,7 @@ import static teclado.Teclado.readString;
 public class Ej1j {
 	
 	//Pedir una cadena por teclado y comprobar que empieza por vocal (puede tener mas letras)
+	//Si eso ocurre, devolver true. En caso contrario devolver false
 	public static void main(String[] args) {
 
 		System.out.println("Introduce una cadena:");

@@ -4,7 +4,7 @@ import static teclado.Teclado.readString;
 
 public class Ej1a {
 	
-	//Pedir una cadena por teclado y comprobar si su valor es "True";
+	//Pedir una cadena por teclado. Comprobar si la cadena es "True", devolver true. En caso contrario, devolver false.
 
 	public static void main(String[] args) {
 

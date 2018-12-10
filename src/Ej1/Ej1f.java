@@ -5,6 +5,7 @@ import static teclado.Teclado.readString;
 public class Ej1f {
 	
 	//Pedir una cadena por teclado y comprobar que sea un número entre 0 y 299.
+	//Si eso ocurre, devolver true. En caso contrario devolver false
 	public static void main(String[] args) {
 
 		System.out.println("Introduce una cadena:");

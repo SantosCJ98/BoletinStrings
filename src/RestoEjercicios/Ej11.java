@@ -4,13 +4,12 @@ import static teclado.Teclado.*;
 
 public class Ej11 {
 	
-	//Pedir una cadena y un caracter y sustituir el caracter de la cadena por un asterisco.
+	//Pedir una cadena y un caracter.
+	//Recorrer la cadena, caracter a caracter, desde el principio hasta el final.
+	//Si el caracter actual es igual al caracter introducido, escribir asterisco
+	//Si no, imprimirlo normalmente.
 
 	public static void main(String[] args) {
-		
-		String s2="";
-		
-		String aux = "";
 		
 		System.out.println("Introduce una cadena:");
 		
@@ -19,6 +18,10 @@ public class Ej11 {
 		System.out.println("Introduce el caracter a reemplazar:");
 		
 		char c = readChar();
+		
+		String s2="";
+		
+		String aux = "";
 		
 		for (int i = 0; i <= s1.length()-1; i++) {
 			
