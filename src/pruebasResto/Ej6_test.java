@@ -12,6 +12,8 @@ class Ej6_test {
 	void test() {
 	
 		assertEquals("Hola que tal", concatenar("Hola ", "que tal"));
+		
+		assertEquals("Esto es una cadena concatenada a esta otra", concatenar("Esto es una cadena concatenada ", "a esta otra"));
 	
 	}
 

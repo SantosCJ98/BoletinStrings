@@ -28,7 +28,7 @@ public class Ej1i {
 	
 	public static boolean nombre (String s) {
 		
-		if (s.matches("[A-Z]+[a-z]+")) {
+		if (s.matches("[A-Z][a-z]+")) {
 			
 			return true;
 			

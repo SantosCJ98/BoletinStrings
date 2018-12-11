@@ -1,4 +1,4 @@
-package pruebas;
+package pruebasEj1;
 
 import static Ej1.Ej1b.*;
 import static org.junit.jupiter.api.Assertions.*;
@@ -11,7 +11,15 @@ class Ej1b_test {
 	void True() {
 		assertTrue(tresletras("aaa"));
 		
+		assertTrue(tresletras("BBB"));
+		
 		assertTrue(tresletras("JqP"));
+		
+		assertTrue(tresletras("ABc"));
+		
+		assertTrue(tresletras("paL"));
+		
+		assertTrue(tresletras("sCJ"));
 	}
 	
 	void False() {

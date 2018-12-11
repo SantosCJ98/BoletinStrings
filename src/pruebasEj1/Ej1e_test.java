@@ -1,4 +1,4 @@
-package pruebas;
+package pruebasEj1;
 
 import static Ej1.Ej1e.*;
 import static org.junit.jupiter.api.Assertions.*;
@@ -26,6 +26,8 @@ class Ej1e_test {
 		assertFalse(sinb("Baaaab"));
 		
 		assertFalse(sinb("baaaB"));
+		
+		assertFalse(sinb("BAAAAB"));
 	}
 	
 	

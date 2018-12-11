@@ -12,7 +12,7 @@ public class Ej1f {
 		
 		String s = readString();
 		
-		if (telefono(s)) {
+		if (numero(s)) {
 			
 			System.out.println("La cadena es valida");	
 		}
@@ -26,7 +26,7 @@ public class Ej1f {
 
 	}
 	
-	public static boolean telefono (String s) {
+	public static boolean numero (String s) {
 		
 		if (s.matches("[0-2]?+[0-9]?+[0-9]?")) {
 			

@@ -1,4 +1,4 @@
-package pruebas;
+package pruebasEj1;
 
 import static Ej1.Ej1h.*;
 import static org.junit.jupiter.api.Assertions.*;
@@ -12,6 +12,8 @@ class Ej1h_test {
 		assertTrue(DNI("12345678A"));
 		
 		assertFalse(DNI("1234"));
+		
+		assertFalse(DNI("1234678932342B"));
 		
 		assertFalse(DNI("Hola"));
 		

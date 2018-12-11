@@ -12,8 +12,6 @@ class Ej5_test {
 	@Test
 	void test() {
 		
-		assertEquals(0, contarrango("", 'a'));
-		
 		assertEquals(0, contarrango("Pan", 'o'));
 		
 		assertEquals(1, contarrango("Pan", 'a'));

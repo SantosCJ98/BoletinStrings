@@ -1,4 +1,4 @@
-package pruebas;
+package pruebasEj1;
 
 import static Ej1.Ej1i.*;
 import static org.junit.jupiter.api.Assertions.*;
@@ -13,7 +13,7 @@ class Ej1i_test {
 		
 		assertFalse(nombre("San tos"));
 		
-		assertFalse(nombre(""));
+		assertFalse(nombre("santos"));
 		
 		
 		

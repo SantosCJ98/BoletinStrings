@@ -1,8 +1,6 @@
 package pruebasResto;
 
 import static org.junit.jupiter.api.Assertions.*;
-
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static RestoEjercicios.Ej13b.contarpalabras;

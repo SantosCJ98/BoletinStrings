@@ -1,4 +1,4 @@
-package pruebas;
+package pruebasEj1;
 
 import static Ej1.Ej1k.*;
 import static org.junit.jupiter.api.Assertions.*;
@@ -9,11 +9,11 @@ class Ej1k_test {
 
 	@Test
 	void True() {
-		assertTrue(email("santoscastillo@mail.com"));
+		assertTrue(email("santos.castillo.jimenez@correo.com"));
 		
-		assertTrue(email("santoscastillo@mail.es"));
+		assertTrue(email("emailinventado@correo.es"));
 		
-		assertFalse(email("santoscastillo@mailes"));
+		assertFalse(email("Hola"));
 		
 		
 		

@@ -1,4 +1,4 @@
-package pruebas;
+package pruebasEj1;
 
 import static Ej1.Ej1c.*;
 import static org.junit.jupiter.api.Assertions.*;
@@ -9,19 +9,19 @@ class Ej1c_test {
 
 	@Test
 	void True() {
-		assertTrue(c("a2c4d5"));
+		assertTrue(c("abcde"));
 		
-		assertTrue(c("a2c4d5pppp"));
+		assertTrue(c("abc1234"));
 	}
 	
 	void False() {
-		assertFalse(c("a2c4dx"));
+		assertFalse(c("1ab"));
 		
-		assertFalse(c("añc4d"));
+		assertFalse(c("abcdx"));
 		
-		assertFalse(c("zñc4d"));
+		assertFalse(c("12345ñ"));
 		
-		assertFalse(c("zñc4dwwwx"));
+		assertFalse(c("zxcvbnm"));
 	
 	}
 

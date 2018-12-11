@@ -1,4 +1,4 @@
-package pruebas;
+package pruebasEj1;
 
 import static Ej1.Ej1g.*;
 import static org.junit.jupiter.api.Assertions.*;
@@ -12,6 +12,8 @@ class Ej1g_test {
 		assertTrue(telefono("123456789"));
 		
 		assertFalse(telefono("1234"));
+		
+		assertFalse(telefono("00000000000"));
 		
 		assertFalse(telefono("Hola"));
 		

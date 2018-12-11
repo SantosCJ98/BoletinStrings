@@ -1,4 +1,4 @@
-package pruebas;
+package pruebasEj1;
 
 import static Ej1.Ej1a.esTrue;
 import static org.junit.jupiter.api.Assertions.*;

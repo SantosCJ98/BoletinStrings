@@ -28,7 +28,7 @@ public class Ej1k {
 	
 	public static boolean email (String s) {
 		
-		if (s.matches("([a-z]||[0-9])+[@]{1}+([a-z]||[0-9])+[.]{1}+(([e]+[s])||([c]+[o]+[m])){1}")) {
+		if (s.matches("([a-z]||[0-9]||[.])+[@]+([a-z])+[.]{1}+(([e]+[s])||([c]+[o]+[m]))")) {
 			
 			return true;
 			

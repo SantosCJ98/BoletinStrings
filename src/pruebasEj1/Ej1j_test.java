@@ -1,4 +1,4 @@
-package pruebas;
+package pruebasEj1;
 
 import static Ej1.Ej1j.*;
 import static org.junit.jupiter.api.Assertions.*;
