@@ -8,11 +8,19 @@ public class Ej3 {
 
 	public static void main(String[] args) {
 		
-		int numvocales = 0;
-		
 		System.out.println("Introduce una cadena");
 		
 		String s1 = readString();
+		
+		System.out.println("Hay " + contarvocales(s1) + " vocales");
+
+		
+
+	}
+	
+	public static int contarvocales (String s1) {
+		
+		int numvocales = 0;
 		
 		for (int i = 0; i < s1.length(); i++) {
 			
@@ -24,10 +32,8 @@ public class Ej3 {
 			
 		}
 		
-		System.out.println("Hay " + numvocales + " vocales");
-
+		return numvocales;
 		
-
 	}
 
 }

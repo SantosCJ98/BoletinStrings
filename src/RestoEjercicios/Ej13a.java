@@ -20,61 +20,63 @@ public class Ej13a {
 
 	public static void main(String[] args) {
 		
+		System.out.println("Introduce una cadena");
 		
-		int resultados = 0;
-	    
-	    System.out.println("Introduce una cadena:");
-	    
-	    String s1 = readString();
-	    
-	    int numespacios = 0;
-	    
-	    boolean error = false;
+		String s = readString();
+		
+		System.out.println("La cadena tiene " + contarpalabras(s) + " palabra(s)");
+			
+		}
+		
+	
 
-	    for (int i = 0; i < s1.length(); i++) {
-	    		
-	    		if (Character.isLetter(s1.charAt(i)) && i == s1.length()-1) {
-	    			
-	    			resultados++;
-	    		
-	    	}
-	    		
-	    		else if (Character.isWhitespace(s1.charAt(i)) && i != 0) {
-	    			
-	    			resultados++;
-	    			
-	    	}
-	    		
-	    		if (Character.isLetter(s1.charAt(i))) {
-	    			
-	    			numespacios = 0;
-	    			
-	    		}
-	    		
-	    		else if (Character.isWhitespace(s1.charAt(i))) {
-	    			
-	    			numespacios++;
-	    			
-	    		}
-	    		
-	    		if (numespacios > 1) {
-	    			
-	    			error = true;
-	    			
-	    			throw new IllegalArgumentException("Error: las palabras deben ir separadas por UN SOLO espacio");
-	    			
-	    			
-	    			
-	    		}
-	       
-	    }
-	    
-	    if (error == false) {
-	    
-	    System.out.println("Hay " + resultados + " palabras");
-	    
-	    }
-	    
-	}
+
+public static int contarpalabras (String s1) {
+	
+	int resultados = 0;
+    
+    int numespacios = 0;
+
+    for (int i = 0; i < s1.length(); i++) {
+    		
+    		if (!Character.isWhitespace(s1.charAt(i)) && i == s1.length()-1) {
+    			
+    			resultados++;
+    		
+    	}
+    		
+    		else if (Character.isWhitespace(s1.charAt(i)) && i != 0) {
+    			
+    			resultados++;
+    			
+    	}
+    		
+    		if (!Character.isWhitespace(s1.charAt(i))) {
+    			
+    			numespacios = 0;
+    			
+    		}
+    		
+    		else if (Character.isWhitespace(s1.charAt(i))) {
+    			
+    			numespacios++;
+    			
+    		}
+    		
+    		if (numespacios > 1) {
+    			
+    			throw new IllegalArgumentException("Error: las palabras deben ir separadas por UN SOLO espacio");
+    			
+    			
+    			
+    		}
+       
+    }
+   
+    
+    return resultados;
+ 
+    
+}
 	
 }

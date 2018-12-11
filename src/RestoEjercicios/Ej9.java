@@ -5,14 +5,19 @@ import static teclado.Teclado.*;
 public class Ej9 {
 	
 	//Pedir una cadena. Recorrer la cadena, caracter a caracter, desde el final hasta el inicio
-	//Reconstruir la cadena.
-	//Si el numero es mayor que la longitud de la cadena, lanzar excepcion.
+	//Reconstruir la cadena al reves.
 
 	public static void main(String[] args) {
 		
 		System.out.println("Introduce una cadena:");
 		
 		String s1 = readString();
+		
+		System.out.println("La cadena resultante es " + cadenainversa(s1));
+		
+	}
+	
+	public static String cadenainversa (String s1) {
 		
 		String s2 = "";
 		
@@ -23,11 +28,10 @@ public class Ej9 {
 			s2 = s2.concat(String.valueOf(s1.charAt(i)));
 		}
 		
-		System.out.println("La cadena resultante es " + s2);
+		return s2;
 		
 		}
 		
-	
 	}
 
 

@@ -11,37 +11,46 @@ public class Ej5 {
 	
 	public static void main(String[] args) {
 		
-		int apariciones=0;
-		
-		boolean inicio = false;
-		
 		System.out.println("Introduce una cadena");
 		
 		String s = readString();
 		
-		System.out.println("¿Qué caracter vas a usar como rango?");
+		System.out.println("¿Qué cadena vas a usar como rango?");
 		
 		char c = readChar();
 		
-		for (int i = 0; i <= s.lastIndexOf(c); i++) {
-			
-			if (s.charAt(i) == c) {
-				
-				inicio = true;
-				
-			}
-			
-			if (inicio) {
-			
-			apariciones++;
-			
-			}
-			
-		}
-		
-		System.out.println("Hay " + apariciones + " caracteres entre el limite especificado");
+		System.out.println("Hay " + contarrango(s, c) + " caracteres en el rango establecido");
 		
 
 	}
+
+
+
+public static int contarrango (String s, char c) {
+	
+	int apariciones=0;
+	
+	boolean inicio = false;
+	
+	for (int i = 0; i <= s.lastIndexOf(c); i++) {
+		
+		if (s.charAt(i) == c) {
+			
+			inicio = true;
+			
+		}
+		
+		if (inicio) {
+		
+		apariciones++;
+		
+		}
+		
+	}
+	
+	return apariciones;
+	
+	
+}
 
 }

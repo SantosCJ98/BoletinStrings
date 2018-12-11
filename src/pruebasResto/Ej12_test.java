@@ -4,14 +4,16 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import static RestoEjercicios.Ej9.cadenainversa;;
+import static RestoEjercicios.Ej12.buscarcadena;;
 
-class Ej9_test {
+class Ej12_test {
 
 	@Test
 	void test() {
 		
-		assertEquals("lat euq aloh", cadenainversa("hola que tal"));
+		assertEquals(6, buscarcadena("hola hola holaholaholahola", "hola"));
+		
+		
 		
 	
 	

@@ -4,24 +4,20 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import static RestoEjercicios.Ej12.*;
-
-import static teclado.Teclado.*;
+import static RestoEjercicios.Ej2.sinespacios;
 
 class Ej2_test {
 
 	@Test
 	void test() {
 		
-		System.out.println("Inserta una cadena");
 		
-		String s1 = readString();
+		assertEquals("Holaquetal", sinespacios("Hola que tal"));
 		
-		String s2 = s1.replace(' ', '\uffff');
+		assertEquals("Holaquetal", sinespacios("Hola        que       tal"));
 		
-		assertEquals(s2, s1.replace(' ', '\uffff'));
+		assertEquals("", sinespacios(" "));
 		
-		System.out.println(s2);
 	}
 
 }

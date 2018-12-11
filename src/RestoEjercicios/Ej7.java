@@ -10,29 +10,32 @@ public class Ej7 {
 	//Si el numero es mayor que la longitud de la cadena, lanzar excepcion.
 	public static void main(String[] args) {
 		
-		System.out.println("Introduce una cadena:");
+		System.out.println("Introduce una cadena");
 		
-		String s1 = readString();
+		String s = readString();
 		
-		String s2 = "";
+		System.out.println("¿Cuantos caracteres vas a sacar?");
 		
-		System.out.println("Introduce el número de caracteres a copiar");
+		int n = readRange(0, s.length(), Rangos.MINEXMAXIN);
 		
-		int n = readInt();
-		
-		if (n > s1.length()) {
-			
-			throw new IllegalArgumentException("Has introducido más caracteres que en la cadena");
-			
-		}
-		
-		for (int i = 0; i < n; i++) {
-			
-			s2 = s2.concat(String.valueOf(s1.charAt(i)));
-		}
-		
-		System.out.println(s2);
+		System.out.println("La cadena resultante es " + primeroscaracteres(s, n));
 		
 	}
+
+
+
+public static String primeroscaracteres (String s1, int n) {
+	
+	String s2 = "";
+	
+	for (int i = 0; i < n; i++) {
+		
+		s2 = s2.concat(String.valueOf(s1.charAt(i)));
+	}
+	
+	return s2;
+	
+	
+}
 
 }

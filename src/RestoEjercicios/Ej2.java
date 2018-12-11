@@ -13,23 +13,30 @@ public class Ej2 {
 		
 		String s1 = readString();
 		
-		String s2 = "";
+		System.out.println("La cadena resultante es " + sinespacios(s1));
+				
+}
+
+public static String sinespacios (String s1) {
+	
+	String s2 = "";
+	
+	for (int i = 0; i < s1.length(); i++) {
 		
-		for (int i = 0; i < s1.length(); i++) {
+		if (!String.valueOf(s1.charAt(i)).equals(" ")) {
 			
-			if (!String.valueOf(s1.charAt(i)).equals(" ")) {
-				
-				String aux = String.valueOf(s1.charAt(i));
-				
-				s2 = s2.concat(aux);
-				
-			}
+			;
+			
+			s2 = s2.concat(String.valueOf(s1.charAt(i)));
 			
 		}
 		
-		System.out.println("La nueva cadena es " + s2);
-		
 	}
-		
-		
+	
+	return s2;
+	
+}	
+	
 }
+
+

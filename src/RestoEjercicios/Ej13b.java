@@ -11,13 +11,21 @@ public class Ej13b {
 	//Si un caracter es un espacio, y palabra es true, palabra se convierte en false y se incrementa en uno el contador de palabras.
 
 	public static void main(String[] args) {
+			
+			System.out.println("Introduce una cadena");
+			
+			String s = readString();
+			
+			System.out.println("La cadena tiene " + contarpalabras(s) + " palabra(s)");
+				
+			
 		
+	    
+}
+	
+	public static int contarpalabras (String s1) {
 		
 		int resultados = 0;
-	    
-	    System.out.println("Introduce una cadena:");
-	    
-	    String s1 = readString();
 	    
 	    boolean palabra = false;
 
@@ -48,8 +56,8 @@ public class Ej13b {
 	       
 	    }
 	    
-	    System.out.println("Hay " + resultados + " palabras");
+	    return resultados;
 	    
 	    }
-	    
-}
+		
+	}

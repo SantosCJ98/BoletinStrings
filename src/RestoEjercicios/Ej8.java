@@ -2,6 +2,8 @@ package RestoEjercicios;
 
 import static teclado.Teclado.*;
 
+import teclado.Teclado.Rangos;
+
 public class Ej8 {
 	
 		//Pedir una cadena y un numero entero.
@@ -10,35 +12,39 @@ public class Ej8 {
 		//Reconstruir la cadena.
 
 	public static void main(String[] args) {
-		
-		System.out.println("Introduce una cadena:");
-		
-		String s1 = readString();
-		
-		String s2 = "";
-		
-		System.out.println("Introduce el número de caracteres a copiar");
-		
-		int n = readInt();
-		
-		if (n > s1.length()) {
 			
-			throw new IllegalArgumentException("Has introducido más caracteres que en la cadena");
+			System.out.println("Introduce una cadena");
 			
-		}
-		
-		int puntoinicial = s1.length() - n;
-		
-		for (int i = puntoinicial; i < s1.length(); i++) {
+			String s = readString();
 			
-			s2 = s2.concat( String.valueOf(s1.charAt(i)));
-		}
-		
-		System.out.println(s2);
+			System.out.println("¿Cuantos caracteres vas a sacar?");
+			
+			int n = readRange(0, s.length(), Rangos.MINEXMAXIN);
+			
+			System.out.println("La cadena resultante es " + ultimoscaracteres(s, n));
 			
 		}
 		
 	
+	
+
+public static String ultimoscaracteres (String s, int n) {
+	
+	String s2 = "";
+
+	
+	int puntoinicial = s.length() - n;
+	
+	for (int i = puntoinicial; i < s.length(); i++) {
+		
+		s2 = s2.concat( String.valueOf(s.charAt(i)));
 	}
+	
+	return s2;
+		
+	
+}
+
+}
 
 

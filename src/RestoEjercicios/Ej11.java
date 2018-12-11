@@ -11,45 +11,55 @@ public class Ej11 {
 
 	public static void main(String[] args) {
 		
-		System.out.println("Introduce una cadena:");
+		System.out.println("Introduce una cadena");
 		
-		String s1 = readString();
+		String s = readString();
 		
-		System.out.println("Introduce el caracter a reemplazar:");
+		System.out.println("¿Que caracter quieres sustituir?");
 		
 		char c = readChar();
 		
-		String s2="";
-		
-		String aux = "";
-		
-		for (int i = 0; i <= s1.length()-1; i++) {
-			
-			char charactual = s1.charAt(i);
-				
-			if (charactual != c) {
-				
-				aux = String.valueOf(charactual);
-				
-				
-			}
-			
-			else if (charactual == c) {
-				
-				aux = String.valueOf('*');
-				
-			}
-			
-			
-			s2 = s2.concat(aux);
+		System.out.println("La cadena resultante es " + sustituirasteriscos(s, c));
 		
 		
+		
+	}
+	
+
+
+public static String sustituirasteriscos (String s1, char c) {
+	
+	String s2="";
+	
+	String aux = "";
+	
+	for (int i = 0; i <= s1.length()-1; i++) {
+		
+		char charactual = s1.charAt(i);
+			
+		if (charactual != c) {
+			
+			aux = String.valueOf(charactual);
+			
 			
 		}
 		
-		System.out.println(s2);
+		else if (charactual == c) {
+			
+			aux = String.valueOf('*');
+			
+		}
+		
+		
+		s2 = s2.concat(aux);
 	
+	
+		
 	}
+	
+	return s2;
+
+}
 	
 }
 			

@@ -12,32 +12,40 @@ public class Ej4 {
 
 	public static void main(String[] args) {
 		
-		int apariciones=0;
-		
 		System.out.println("Introduce una cadena");
 		
 		String s = readString();
 		
-		System.out.println("¿Qué caracter vas a buscar?");
+		System.out.println("Introduce un caracter");
 		
 		char c = readChar();
 		
-		for (int i = 0; i < s.length(); i++) {
-			
-			if (s.charAt(i) == c) {
-				
-			 apariciones++;
-				
-			}
-			
-		}
-			
-	System.out.println("El caracter especificado aparece " + apariciones + " veces");
+		System.out.println("El caracter aparece " + contarcaracter(s, c) + " veces");
 		
-		
-		
-		
-
 	}
 
+
+
+public static int contarcaracter (String s, char c) {
+	
+	int apariciones=0;
+	
+	for (int i = 0; i < s.length(); i++) {
+		
+		if (s.charAt(i) == c) {
+			
+		 apariciones++;
+			
+		}
+		
+	}
+		
+return apariciones;
+	
+	
+	
+	
+
+}
+	
 }

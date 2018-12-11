@@ -8,29 +8,36 @@ public class Ej10 {
 	//Sumar los caracteres numericos.
 	public static void main(String[] args) {
 		
-		int suma=0;
+		System.out.println("Introduce una cadena");
 		
-		System.out.println("Introduce una cadena:");
+		String s = readString();
 		
-		String s1 = readString();
-		
+		System.out.println("La suma de sus caracteres numéricos es " + sumarcharsnumericos(s));
+			
+		}
+	
 
-		for (int i = 0; i < s1.length(); i++) {
+
+public static int sumarcharsnumericos (String s1) {
+	
+	int suma=0;
+	
+	for (int i = 0; i < s1.length(); i++) {
+		
+		char c = s1.charAt(i);
+		
+		if (Character.isDigit(c)) {
 			
-			char c = s1.charAt(i);
+			suma+=Character.getNumericValue(c);
 			
-			if (Character.isDigit(c)) {
-				
-				suma+=Character.getNumericValue(c);
-				
-			}
 		}
-		
-		System.out.println(suma);
-		
 	}
-			
-		}
+	
+	return suma;
+	
+}
+	
+}
 	
 
 

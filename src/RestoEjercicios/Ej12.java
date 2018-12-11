@@ -10,15 +10,22 @@ public class Ej12 {
 	
 	public static void main(String[] args) {
 		
-		int resultados = 0;
+		System.out.println("Introduce una cadena");
 		
-		System.out.println("Introduce una cadena:");
+		String s = readString();
 		
-		String s1 = readString();
-		
-		System.out.println("¿Que cadena vas a buscar?");
+		System.out.println("¿Qué cadena quieres buscar?");
 		
 		String buscar = readString();
+		
+		System.out.println("Se han encontrado " + buscarcadena(s, buscar) + " resultados");
+		
+	}
+	
+	public static int buscarcadena (String s1, String buscar) {
+		
+		int resultados = 0;
+	
 		
 		for (int i = 0, j = buscar.length(); j <= s1.length(); i++, j++) {
 			
@@ -31,7 +38,8 @@ public class Ej12 {
 		}
 		
 		
-		System.out.println("Se han dado " + resultados + " coincidencias");
+		return resultados;
+		
 		
 	}
 	
