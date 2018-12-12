@@ -31,13 +31,13 @@ public class Ej13b {
 
 	    for (int i = 0; i < s1.length(); i++) {
 	    		
-	    		if (Character.isLetter(s1.charAt(i)) && i == s1.length()-1) {
+	    		if (!Character.isWhitespace(s1.charAt(i)) && i == s1.length()-1) {
 	    			
 	    			resultados++;
 	    		
 	    	}
 	    		
-	    		else if (Character.isLetter(s1.charAt(i)) && i != s1.length()-1) {
+	    		else if (!Character.isWhitespace(s1.charAt(i)) && i != s1.length()-1) {
 	    			
 	    			palabra = true;
 	    			
