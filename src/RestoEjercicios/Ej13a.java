@@ -39,25 +39,25 @@ public static int contarpalabras (String s1) {
 
     for (int i = 0; i < s1.length(); i++) {
     		
-    		if (!Character.isWhitespace(s1.charAt(i)) && i == s1.length()-1) {
+    		if (!String.valueOf(s1.charAt(i)).equals(" ") && i == s1.length()-1) {
     			
     			resultados++;
     		
     	}
     		
-    		else if (Character.isWhitespace(s1.charAt(i)) && i != 0) {
+    		else if (String.valueOf(s1.charAt(i)).equals(" ") && i != 0) {
     			
     			resultados++;
     			
     	}
     		
-    		if (!Character.isWhitespace(s1.charAt(i))) {
+    		if (!String.valueOf(s1.charAt(i)).equals(" ")) {
     			
     			numespacios = 0;
     			
     		}
     		
-    		else if (Character.isWhitespace(s1.charAt(i))) {
+    		else if (String.valueOf(s1.charAt(i)).equals(" ")) {
     			
     			numespacios++;
     			

@@ -31,19 +31,19 @@ public class Ej13b {
 
 	    for (int i = 0; i < s1.length(); i++) {
 	    		
-	    		if (!Character.isWhitespace(s1.charAt(i)) && i == s1.length()-1) {
+	    		if (!String.valueOf(s1.charAt(i)).equals(" ") && i == s1.length()-1) {
 	    			
 	    			resultados++;
 	    		
 	    	}
 	    		
-	    		else if (!Character.isWhitespace(s1.charAt(i)) && i != s1.length()-1) {
+	    		else if (!String.valueOf(s1.charAt(i)).equals(" ") && i != s1.length()-1) {
 	    			
 	    			palabra = true;
 	    			
 	    		}
 	    		
-	    		else if (Character.isWhitespace(s1.charAt(i)) && palabra == true) {
+	    		else if (String.valueOf(s1.charAt(i)).equals(" ") && palabra == true) {
 	    			
 	    			palabra = false;
 	    			
