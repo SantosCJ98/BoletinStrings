@@ -9,13 +9,19 @@ public class Ej2 {
 
 	public static void main(String args[]) {
 
+		// Pedir la cadena
+
 		System.out.println("Introduce una cadena:");
 
 		String s1 = readString();
 
+		// Devolver la cadena sin espacios.
+
 		System.out.println("La cadena resultante es " + sinespacios(s1));
 
 	}
+
+	// Funcion que devuelve una cadena sin espacios.
 
 	public static String sinespacios(String s1) {
 

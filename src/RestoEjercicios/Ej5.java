@@ -13,17 +13,28 @@ public class Ej5 {
 
 	public static void main(String[] args) {
 
+		// Pedir la cadena al usuario
+
 		System.out.println("Introduce una cadena");
 
 		String s = readString();
 
-		System.out.println("¿Qué cadena vas a usar como rango?");
+		// Pedir un caracter al usuario
+
+		System.out.println("¿Qué caracter vas a usar como rango?");
 
 		char c = readChar();
+
+		// Contar los caracteres que hay desde la primera aparicion del caracter hasta
+		// la última
 
 		System.out.println("Hay " + contarrango(s, c) + " caracteres en el rango establecido");
 
 	}
+
+	// Funcion que cuenta os caracteres que hay desde la primera aparicion del
+	// caracter hasta
+	// la última aparicion del mismo.
 
 	public static int contarrango(String s, char c) {
 
@@ -31,7 +42,7 @@ public class Ej5 {
 
 		boolean inicio = false;
 
-		for (int i = 0; i <= s.lastIndexOf(c); i++) {
+		for (int i = 0; i <= s.lastIndexOf(c); i++) { // Hasta la última aparacion del caracter.
 
 			if (s.charAt(i) == c) {
 
@@ -41,7 +52,7 @@ public class Ej5 {
 
 			if (inicio) {
 
-				apariciones++;
+				apariciones++; // Si el caracter aparece se empieza a contar.
 
 			}
 

@@ -10,13 +10,19 @@ public class Ej9 {
 
 	public static void main(String[] args) {
 
+		// Pedir la cadena
+
 		System.out.println("Introduce una cadena:");
 
 		String s1 = readString();
 
+		// Devolver la cadena invertida.
+
 		System.out.println("La cadena resultante es " + cadenainversa(s1));
 
 	}
+
+	// Función que devuelve una cadena invertida.
 
 	public static String cadenainversa(String s1) {
 

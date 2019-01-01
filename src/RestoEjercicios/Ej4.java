@@ -12,17 +12,25 @@ public class Ej4 {
 
 	public static void main(String[] args) {
 
+		// Pedir la cadena al usuario
+
 		System.out.println("Introduce una cadena");
 
 		String s = readString();
+
+		// Pedir el caracter al usuario
 
 		System.out.println("Introduce un caracter");
 
 		char c = readChar();
 
+		// Mostrar cuantas veces aparece ese caracter en la cadena
+
 		System.out.println("El caracter aparece " + contarcaracter(s, c) + " veces");
 
 	}
+
+	// Función que cuenta las apariciones de un caracter en una cadena.
 
 	public static int contarcaracter(String s, char c) {
 

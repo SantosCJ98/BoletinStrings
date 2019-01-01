@@ -13,17 +13,25 @@ public class Ej8 {
 
 	public static void main(String[] args) {
 
+		// Pedir cadena al usuario
+
 		System.out.println("Introduce una cadena");
 
 		String s = readString();
 
+		// Preguntar al usuario cuantos caracteres quiere sacar.
+
 		System.out.println("¿Cuantos caracteres vas a sacar?");
 
-		int n = readRange(0, s.length(), Rangos.MINEXMAXIN);
+		int n = readRange(0, s.length(), Rangos.MINEXMAXIN);// Min 1, Max toda la cadena.
+
+		// Mostrar resultado
 
 		System.out.println("La cadena resultante es " + ultimoscaracteres(s, n));
 
 	}
+
+	// Funcion que saca los n ultimos caracteres de una cadena.
 
 	public static String ultimoscaracteres(String s, int n) {
 

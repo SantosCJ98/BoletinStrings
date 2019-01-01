@@ -9,13 +9,19 @@ public class Ej10 {
 	// Sumar los caracteres numericos.
 	public static void main(String[] args) {
 
+		// Pedir la cadena al usuario
+
 		System.out.println("Introduce una cadena");
 
 		String s = readString();
 
+		// Devolver el resultado
+
 		System.out.println("La suma de sus caracteres numéricos es " + sumarcharsnumericos(s));
 
 	}
+
+	// Funcion suma los números de una cadena.
 
 	public static int sumarcharsnumericos(String s1) {
 
@@ -25,7 +31,7 @@ public class Ej10 {
 
 			char c = s1.charAt(i);
 
-			if (Character.isDigit(c)) {
+			if (Character.isDigit(c)) { // Si el caracter es un número lo suma
 
 				suma += Character.getNumericValue(c);
 

@@ -8,6 +8,8 @@ public class Ej6 {
 
 	public static void main(String[] args) {
 
+		// Pedir las dos cadenas al usuario
+
 		System.out.println("Inserta una cadena");
 
 		String s1 = readString();
@@ -16,9 +18,13 @@ public class Ej6 {
 
 		String s2 = readString();
 
+		// Mostrar la cadena concatenada.
+
 		System.out.println("La cadena resultante es " + concatenar(s1, s2));
 
 	}
+
+	// Función que concatena dos cadenas.
 
 	public static String concatenar(String s1, String s2) {
 

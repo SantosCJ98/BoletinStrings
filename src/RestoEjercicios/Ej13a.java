@@ -21,13 +21,19 @@ public class Ej13a {
 
 	public static void main(String[] args) {
 
+		// Pedir la cadena
+
 		System.out.println("Introduce una cadena");
 
 		String s = readString();
 
+		// Mostrar cuantas palabras tiene
+
 		System.out.println("La cadena tiene " + contarpalabras(s) + " palabra(s)");
 
 	}
+
+	// Funcion que devuelve el número de palabras separadas por un espacio.
 
 	public static int contarpalabras(String s1) {
 

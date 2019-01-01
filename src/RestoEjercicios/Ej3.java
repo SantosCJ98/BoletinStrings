@@ -8,13 +8,20 @@ public class Ej3 {
 
 	public static void main(String[] args) {
 
+		// Pedir una cadena al usuario
+
 		System.out.println("Introduce una cadena");
 
 		String s1 = readString();
 
+		// Devolver el número de vocales que contiene
+
 		System.out.println("Hay " + contarvocales(s1) + " vocales");
 
 	}
+
+	// Función que cuenta las vocales que contiene una cadena (mayúsculas o
+	// minúsculas)
 
 	public static int contarvocales(String s1) {
 

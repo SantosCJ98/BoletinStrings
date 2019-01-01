@@ -12,17 +12,26 @@ public class Ej12 {
 
 	public static void main(String[] args) {
 
+		// Pedir una cadena
+
 		System.out.println("Introduce una cadena");
 
 		String s = readString();
+
+		// Pedir al usuario lo que quiere buscar.
 
 		System.out.println("¿Qué cadena quieres buscar?");
 
 		String buscar = readString();
 
+		// Mostrar resultados
+
 		System.out.println("Se han encontrado " + buscarcadena(s, buscar) + " resultados");
 
 	}
+
+	// Función que devuelve el número de coincidencias que se dan en una cadena bajo
+	// un filtro.
 
 	public static int buscarcadena(String s1, String buscar) {
 
