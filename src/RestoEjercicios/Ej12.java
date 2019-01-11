@@ -5,43 +5,63 @@ import static teclado.Teclado.*;
 public class Ej12 {
 
 	// Pedir 2 cadenas.
-	// Recorrer la primera cadena, cogiendo el numero de caracteres que tiene la
-	// segunda, y asi hasta llegar al final de la primera.
-	// Si la porcion de cadena actual es igual a la segunda cadena, incrementar el
-	// contador en uno.
+	// Recorrer la primera cadena en busca de coincidencias para la segunda.
+	// Si los caracteres son iguales (dentro del recorrido de la segunda cadena), se
+	// incrementa en uno
+	// el contador.
+	// Mostrar el resultado.
 
 	public static void main(String[] args) {
-
-		// Pedir una cadena
 
 		System.out.println("Introduce una cadena");
 
 		String s = readString();
 
-		// Pedir al usuario lo que quiere buscar.
-
 		System.out.println("¿Qué cadena quieres buscar?");
 
 		String buscar = readString();
 
-		// Mostrar resultados
-
-		System.out.println("Se han encontrado " + buscarcadena(s, buscar) + " resultados");
+		System.out.println("Resultados: " + coincidencias(s, buscar) + " coincidencias");
 
 	}
 
-	// Función que devuelve el número de coincidencias que se dan en una cadena bajo
-	// un filtro.
+	public static int coincidencias(String s, String buscar) {
 
-	public static int buscarcadena(String s1, String buscar) {
+		boolean encontrado = false;
+
+		char caractersobrante = buscar.charAt(buscar.length() - 1);
 
 		int resultados = 0;
 
-		for (int i = 0, j = buscar.length(); j <= s1.length(); i++, j++) {
+		for (int i = 0; i < s.length(); i++) {
 
-			if (buscar.equals(s1.substring(i, j))) {
+			for (int j = 0; j < buscar.length(); j++) {
 
-				resultados++;
+				if (s.charAt(i) == buscar.charAt(j) && j == buscar.length() - 1
+						&& caractersobrante != buscar.charAt(j)) {
+					resultados++;
+
+				}
+
+				else if (s.charAt(i) == buscar.charAt(j) && buscar.length() == 1) {
+
+					resultados++;
+
+				}
+
+				else if (s.charAt(i) == buscar.charAt(j) && j != buscar.length() - 1) {
+
+					encontrado = true;
+
+				}
+
+				else if (s.charAt(i) == buscar.charAt(j) && encontrado == true) {
+
+					encontrado = false;
+
+					resultados++;
+
+				}
 
 			}
 

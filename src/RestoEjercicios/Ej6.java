@@ -3,47 +3,50 @@ package RestoEjercicios;
 import static teclado.Teclado.*;
 
 public class Ej6 {
-
-	// Pedir 2 cadenas. Concatenarlas.
+	
+	//Pedir 2 cadenas. Concatenarlas.
 
 	public static void main(String[] args) {
-
-		// Pedir las dos cadenas al usuario
-
+	
+		
 		System.out.println("Inserta una cadena");
-
+		
 		String s1 = readString();
-
+		
 		System.out.println("Inserta otra cadena");
-
+		
 		String s2 = readString();
-
-		// Mostrar la cadena concatenada.
-
+		
 		System.out.println("La cadena resultante es " + concatenar(s1, s2));
+		
+		
+		
 
 	}
 
-	// Función que concatena dos cadenas.
 
-	public static String concatenar(String s1, String s2) {
 
-		String res = "";
-
-		for (int i = 0; i < s1.length(); i++) {
-
+public static String concatenar (String s1, String s2) {
+	
+	String res = "";
+	
+	for (int i = 0; i < s1.length(); i++) {
+			
 			res = res.concat(String.valueOf(s1.charAt(i)));
-
-		}
-
-		for (int i = 0; i < s2.length(); i++) {
-
-			res = res.concat(String.valueOf(s2.charAt(i)));
-
-		}
-
-		return res;
-
+			
+		
 	}
+	
+	for (int i = 0; i < s2.length(); i++) {
+		
+			res = res.concat(String.valueOf(s2.charAt(i)));
+		
+	
+	}
+	
+	return res;
+	
+	
+}
 
 }
